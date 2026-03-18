@@ -44,5 +44,7 @@ rcb-fan-hub/
 │
 ├── README.md
 
-## 📂 Project Structure
+##  Website Preview
+
+![RCB Fan Hub](login.jpeg),(details.jpeg)
 
