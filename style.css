@@ -1,0 +1,392 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0b0b0b;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+}
+/* STATS SECTION */
+#stats {
+  text-align: center;   /* centers heading */
+}
+
+/* CARDS CONTAINER (ROW) */
+#stats .stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+header h1 {
+  color: #EC1C24;
+}
+h2 {
+  color: #EC1C24;
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+    border-bottom: 2px solid gold;
+  color: #EC1C24;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, black, #EC1C24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  width: 200px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #EC1C24;
+}
+
+/* PLAYERS GRID */
+#players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* MATCH LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #222;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #EC1C24;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: gold;
+  color: black;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+.card {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+.champion-banner {
+  background: gold;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 15px;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px gold;
+  }
+  to {
+    box-shadow: 0 0 25px orange;
+  }
+}
+.tagline {
+  font-style: italic;
+  color: #fff;
+}
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CENTER THE TABLE SECTION */
+#points {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* TABLE CONTAINER */
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* TABLE DESIGN */
+table {
+  border-collapse: collapse;
+  width: 70%;
+  max-width: 800px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* HEADER */
+th {
+  background: #EC1C24;
+  padding: 12px;
+}
+
+/* CELLS */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+/* HOVER EFFECT */
+tr:hover {
+  background: #333;
+}
+tr:first-child + tr {
+  background: #2a0000;
+  font-weight: bold;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero-img {
+  width: 200px;
+  border-radius: 50%;
+}
+.trophy-img {
+  width: 180px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 20px gold;
+}
+@media(max-width: 600px){
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+section {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+/* FIX FAN ZONE CENTERING */
+
+#fan {
+  text-align: center;
+}
+
+#fan .card {
+  display: block;
+  width: 320px;
+  margin: 20px auto;
+}
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 15px;
+  width: 200px;
+  transition: 0.3s;
+  text-align: center;
+  display: block;  
+}
+#next-match {
+  text-align: center;
+  background: #111;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 0 15px #EC1C24;
+}
+#countdown {
+  font-size: 1.5rem;
+  color: gold;
+  font-weight: bold;
+}
+#live-score {
+  text-align: center;
+  padding: 20px;
+}
+
+#live-score .card {
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px #EC1C24;
+}
+.login-container {
+  background: #111;
+  color: white;
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px #EC1C24;
+}
+
+.login-container input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background: #EC1C24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: gold;
+  color: black;
+}
+.signup-container {
+  background: #111;
+  color: white;
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px #EC1C24;
+}
+
+.signup-container input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup-container button {
+  padding: 10px 20px;
+  background: #EC1C24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-container button:hover {
+  background: gold;
+  color: black;
+}
+.light {
+  background: white;
+  color: red;
+}
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #EC1C24;
+  transform: scale(1.05);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - RCB Fan Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+  <h1>Login to RCB Fan Hub 🔥</h1>
+
+  <form id="login-form">
+    <input type="text" id="username" placeholder="Username" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+</div>
+
+<script>
+const form = document.getElementById('login-form');
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const username = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value;
+
+  let users = JSON.parse(localStorage.getItem('rcbUsers')) || [];
+
+  const user = users.find(u => u.username === username && u.password === password);
+
+  if(user){
+    // Successful login → save logged in user
+    localStorage.setItem('loggedInUser', username);
+    alert('Login successful!');
+    window.location.href = 'index.html';
+  } else {
+    alert('Invalid username or password!');
+  }
+});
+</script>
+</body>
+</html>
