@@ -46,5 +46,6 @@ rcb-fan-hub/
 
 ##  Website Preview
 
-![RCB Fan Hub](login.jpeg),(details.jpeg)
+![RCB Fan Hub](login.jpeg)
+![RCB Fan Hub](website.jpeg)
 
