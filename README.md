@@ -49,3 +49,17 @@ rcb-fan-hub/
 ![RCB Fan Hub](login.jpeg)
 ![RCB Fan Hub](website.jpeg)
 
+##  Future Improvements
+- ## 💡 Future Improvements
+- Live IPL score integration
+- Player statistics API
+- Adding player images
+- Automatic chant after opening website
+- Real-time chat system for fans
+- Fully responsive mobile-first design
+-  Mobile optimization
+-  Better UI & responsiveness  
+
+# Devoloped By
+M.Nithya Sri
+
