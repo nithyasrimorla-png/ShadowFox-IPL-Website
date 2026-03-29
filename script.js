@@ -104,8 +104,13 @@ window.onload = () => {
   document.getElementById("loader").style.display = "none";
 };
 function playSound(){
-  let audio = document.getElementById("sound");
-  audio.play();
+  const audio = document.getElementById("sound");
+  
+  if(audio){
+    audio.play().catch(err => console.log("Audio error:", err));
+  } else {
+    console.log("Audio element not found");
+  }
 }
 function stopSound(){
   let audio = document.getElementById("sound");
