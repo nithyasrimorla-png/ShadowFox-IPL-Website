@@ -1,6 +1,6 @@
 // PLAYING XI
 const players = [
-  "Virat Kohli"
+  "Virat Kohli",
   "Devdutt Padikkal",
   "Rajat Patidar",
   "Phil Salt",
