@@ -1,16 +1,16 @@
 // PLAYING XI
 const players = [
-  "Virat Kohli",
-  "Faf du Plessis",
-  "Glenn Maxwell",
+  "Virat Kohli"
+  "Devdutt Padikkal",
   "Rajat Patidar",
-  "Dinesh Karthik",
-  "Cameron Green",
-  "Mahipal Lomror",
-  "Wanindu Hasaranga",
-  "Mohammed Siraj",
-  "Reece Topley",
-  "Yash Dayal"
+  "Phil Salt",
+  "Jitesh Sharma",
+  "Krunal Pandya",
+  "Tim David",
+  "Romario Shepherd",
+  "Venkatesh Iyer",
+  "Josh Hazelwood",
+  "Bhuvaneswar Kumar"
 ];
 const container = document.getElementById("players-container");
 
