@@ -288,6 +288,33 @@ function sendMessage(){
   displayMessages();
 }
 //Fans chatting
+// Load messages
+let messages = JSON.parse(localStorage.getItem("chat")) || [];
+// 🔥 Add Bot Welcome ONLY ONCE
+if(!messages.some(m => m.name === "RCB Bot")){
+  messages.push({
+    name: "RCB Bot",
+    msg: "🔥 Welcome to RCB Fan Chat!"
+  });
+  localStorage.setItem("chat", JSON.stringify(messages));
+}
+// SEND MESSAGE
+function sendMessage(){
+  let name = document.getElementById("chat-name").value;
+  let msg = document.getElementById("chat-msg").value;
+
+  if(name === "" || msg === ""){
+    alert("Enter name & message!");
+    return;
+  }
+  messages.push({name, msg});
+  localStorage.setItem("chat", JSON.stringify(messages));
+  document.getElementById("chat-name").value =
+  localStorage.getItem("loggedInUser") || "";
+  displayMessages();
+}
+
+// DISPLAY MESSAGES
 function displayMessages(){
   let box = document.getElementById("chat-box");
   box.innerHTML = "";
@@ -297,12 +324,9 @@ function displayMessages(){
     div.innerHTML = `<b>${m.name}:</b> ${m.msg}`;
     box.appendChild(div);
   });
-  box.scrollTop = box.scrollHeight; // auto scroll
+  // Auto scroll
+  box.scrollTop = box.scrollHeight;
 }
+
+// LOAD ON START
 displayMessages();
-//Fake online msg
-setTimeout(()=>{
-  messages.push({name:"RCB Bot", msg:"🔥 Welcome to RCB Fan Chat!"});
-  localStorage.setItem("chat", JSON.stringify(messages));
-  displayMessages();
-},2000);
