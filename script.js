@@ -268,3 +268,35 @@ function openModal(player){
 function closeModal(){
   document.getElementById("modal").style.display = "none";
 }
+
+let messages = JSON.parse(localStorage.getItem("chat")) || [];
+
+function sendMessage(){
+  let name = document.getElementById("chat-name").value;
+  let msg = document.getElementById("chat-msg").value;
+
+  if(name === "" || msg === ""){
+    return alert("Enter name & message!");
+  }
+
+  messages.push({name, msg});
+
+  localStorage.setItem("chat", JSON.stringify(messages));
+
+  document.getElementById("chat-msg").value = "";
+
+  displayMessages();
+}
+//Fans chatting
+function displayMessages(){
+  let box = document.getElementById("chat-box");
+  box.innerHTML = "";
+  messages.forEach(m => {
+    let div = document.createElement("div");
+    div.classList.add("message");
+    div.innerHTML = `<b>${m.name}:</b> ${m.msg}`;
+    box.appendChild(div);
+  });
+  box.scrollTop = box.scrollHeight; // auto scroll
+}
+displayMessages();
