@@ -475,3 +475,8 @@ button {
 button {
   touch-action: manipulation;
 }
+#player-stats {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
