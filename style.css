@@ -418,3 +418,60 @@ button:active {
   float: right;
   font-size: 20px;
 }
+/* MOBILE DESIGN */
+@media (max-width: 768px){
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+    font-size: 1.2rem;
+  }
+
+  /* PLAYER CARDS */
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* TABLE */
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  /* INPUTS */
+  input {
+    width: 90%;
+  }
+
+  /* FAN ZONE BOX */
+  .fan-box {
+    width: 95%;
+  }
+}
+#players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+} 
+button {
+  width: auto;
+  min-width: 120px;
+}
+button {
+  touch-action: manipulation;
+}
