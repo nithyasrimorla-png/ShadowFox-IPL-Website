@@ -493,3 +493,32 @@ button {
   color: gold;
   margin-top: 10px;
 }
+/* BACKGROUND */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOX */
+.modal-content {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 20px red;
+}
+
+/* CLOSE BUTTON */
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
