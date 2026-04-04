@@ -12,18 +12,18 @@ const players = [
   "Josh Hazelwood",
   "Bhuvaneswar Kumar"
 ];
+// Get container
 const container = document.getElementById("players-container");
-// first
+
+// Clear old content
 container.innerHTML = "";
-// Single loop 
+
+// Loop and display names
 players.forEach(player => {
   const card = document.createElement("div");
   card.classList.add("card");
-  card.innerHTML = `
-    <h3>${player.name}</h3>
-    <p>Role: ${player.role}</p>
-    <p>Runs: ${player.runs}</p>
-  `;
+
+  card.innerText = player;  
 
   container.appendChild(card);
 });
