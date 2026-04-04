@@ -100,13 +100,20 @@ let likes = localStorage.getItem("likes")
 
 // Show likes on page load
 document.getElementById("like-count").innerText = likes + " Likes";
-
 function likeTeam() {
   likes++;
   localStorage.setItem("likes", likes);
   document.getElementById("like-count").innerText = likes + " Likes";
 }
 }
+//Increase Likes
+function likeTeam(){
+  let likes = localStorage.getItem("likes") || 0;
+  likes++; // increase count
+  localStorage.setItem("likes", likes);
+  document.getElementById("like-count").innerText = likes + " Likes";
+}
+//
 function quiz(ans){
   if(ans === "Kohli"){
     document.getElementById("result").innerText = "Correct 🔥";
