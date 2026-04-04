@@ -300,3 +300,9 @@ function displayMessages(){
   box.scrollTop = box.scrollHeight; // auto scroll
 }
 displayMessages();
+//Fake online msg
+setTimeout(()=>{
+  messages.push({name:"RCB Bot", msg:"🔥 Welcome to RCB Fan Chat!"});
+  localStorage.setItem("chat", JSON.stringify(messages));
+  displayMessages();
+},2000);
