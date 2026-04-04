@@ -25,16 +25,6 @@ players.forEach(player => {
     <p>Runs: ${player.runs}</p>
   `;
 
-  // Click for popup
-  card.onclick = function(){
-    openModal(player);
-    function openModal(player){ 
-  console.log(player);   
-  document.getElementById("modal").style.display = "flex";
-}
-  };
-  
-
   container.appendChild(card);
 });
 // FAN POL
