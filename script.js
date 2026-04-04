@@ -228,3 +228,30 @@ setTimeout(()=>{
 function topFunction(){
   window.scrollTo({top: 0, behavior: "smooth"});
 }
+//Player Charts
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: [
+      "Kohli",
+      "Faf",
+      "Maxwell",
+      "Patidar",
+      "DK"
+    ],
+    datasets: [{
+      label: 'Runs',
+      data: [7500, 4000, 2700, 900, 4500],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
