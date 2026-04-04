@@ -480,3 +480,16 @@ button {
   margin: auto;
   text-align: center;
 }
+#fan-day {
+  text-align: center;
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+#fan-name {
+  font-size: 1.5rem;
+  color: gold;
+  margin-top: 10px;
+}
