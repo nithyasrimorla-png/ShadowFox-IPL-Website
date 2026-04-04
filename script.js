@@ -13,32 +13,25 @@ const players = [
   "Bhuvaneswar Kumar"
 ];
 const container = document.getElementById("players-container");
-
+// first
+container.innerHTML = "";
+// Single loop 
 players.forEach(player => {
   const card = document.createElement("div");
   card.classList.add("card");
-
   card.innerHTML = `
-    <img src="${player.img}" alt="${player.name}">
     <h3>${player.name}</h3>
+    <p>Role: ${player.role}</p>
+    <p>Runs: ${player.runs}</p>
   `;
+
+  // Click for popup
+  card.onclick = function(){
+    openModal(player);
+  };
 
   container.appendChild(card);
 });
-// Clear before adding (important)
-container.innerHTML = "";
-
-// Add players
-players.forEach(player => {
-  const div = document.createElement("div");
-  div.classList.add("card");
-  div.innerHTML = `<h3>${player}</h3>`;
-  container.appendChild(div);
-});
-function showPlayer(name, role, runs){
-  alert(`${name}\nRole: ${role}\nRuns: ${runs}`);
-}
-
 // FAN POL
 function vote(player) {
   document.getElementById("vote-result").innerText =
