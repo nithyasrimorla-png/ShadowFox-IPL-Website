@@ -269,3 +269,14 @@ function showFan(){
   document.getElementById("fan-name").innerText = fans[random];
 }
 showFan();
+
+//popup modal
+function openModal(player){
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("modal-name").innerText = player.name;
+  document.getElementById("modal-role").innerText = "Role: " + player.role;
+  document.getElementById("modal-runs").innerText = "Runs: " + player.runs;
+}
+function closeModal(){
+  document.getElementById("modal").style.display = "none";
+}
