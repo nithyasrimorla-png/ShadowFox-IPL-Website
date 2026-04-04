@@ -57,6 +57,17 @@ function addComment() {
     ul.appendChild(li);
     input.value = "";
   }
+  function showPopup(player){
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("p-name").innerText = player.name;
+  document.getElementById("p-role").innerText = "Role: " + player.role;
+  document.getElementById("p-runs").innerText = "Runs: " + player.runs;
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+  card.onclick = () => showPopup(player);
   // POLL
 function vote(player){
   document.getElementById("vote-result").innerText =
