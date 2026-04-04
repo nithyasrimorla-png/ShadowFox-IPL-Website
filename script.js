@@ -238,7 +238,7 @@ new Chart(ctx, {
       "Kohli",
       "Padikkal",
       "Patidar",
-      "Phil salt",
+      "Phil Salt",
       "Tim David"
     ],
     datasets: [{
@@ -255,3 +255,19 @@ new Chart(ctx, {
     }
   }
 });
+
+// Fan-Day
+const fans = [
+  "Nithya ❤️",
+  "RCB Warrior 🔥",
+  "Kohli Fan 👑",
+  "Ee Sala Fan 💥",
+  "RCB Army 💪"
+];
+
+function showFan(){
+  let random = Math.floor(Math.random() * fans.length);
+  document.getElementById("fan-name").innerText = fans[random];
+}
+
+showFan();
