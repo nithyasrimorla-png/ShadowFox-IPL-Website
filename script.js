@@ -216,3 +216,8 @@ function toggleMode(){
 setTimeout(()=>{
   alert("🔥 Match starts in 1 hour!");
 },5000);
+
+//Add back to top button
+function topFunction(){
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
