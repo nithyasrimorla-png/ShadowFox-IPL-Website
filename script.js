@@ -264,10 +264,8 @@ const fans = [
   "Ee Sala Fan 💥",
   "RCB Army 💪"
 ];
-
 function showFan(){
   let random = Math.floor(Math.random() * fans.length);
   document.getElementById("fan-name").innerText = fans[random];
 }
-
 showFan();
