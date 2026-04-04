@@ -28,7 +28,12 @@ players.forEach(player => {
   // Click for popup
   card.onclick = function(){
     openModal(player);
+    function openModal(player){
+  console.log(player);   
+  document.getElementById("modal").style.display = "flex";
+}
   };
+  
 
   container.appendChild(card);
 });
