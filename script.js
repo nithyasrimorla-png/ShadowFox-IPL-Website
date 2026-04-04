@@ -236,10 +236,10 @@ new Chart(ctx, {
   data: {
     labels: [
       "Kohli",
-      "Faf",
-      "Maxwell",
+      "Padikkal",
       "Patidar",
-      "DK"
+      "Phil salt",
+      "Tim David"
     ],
     datasets: [{
       label: 'Runs',
@@ -249,7 +249,7 @@ new Chart(ctx, {
   },
   options: {
     scales: {
-      y: {
+      y: { 
         beginAtZero: true
       }
     }
