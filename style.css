@@ -522,3 +522,26 @@ button {
   cursor: pointer;
   font-size: 20px;
 }
+#chat {
+  text-align: center;
+  padding: 40px;
+}
+
+#chat-box {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  background: #111;
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding: 10px;
+  text-align: left;
+}
+
+.message {
+  background: #EC1C24;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
