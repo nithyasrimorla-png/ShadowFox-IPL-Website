@@ -44,6 +44,9 @@ function vote(player) {
   document.getElementById("vote-result").innerText =
     "You voted for " + player + " 🔥";
 }
+window.onload = function(){
+  document.getElementById("loader").style.display = "none";
+}
 
 // COMMENTS
 function addComment() {
