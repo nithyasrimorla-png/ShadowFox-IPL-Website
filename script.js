@@ -1,6 +1,6 @@
 // PLAYING XI
 const players = [
-  "Virat Kohli",
+  name="Virat Kohli",role: "Batsman", runs: "7500+"
   "Devdutt Padikkal",
   "Rajat Patidar",
   "Phil Salt",
