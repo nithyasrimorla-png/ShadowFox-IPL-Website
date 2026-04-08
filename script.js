@@ -27,6 +27,7 @@ if (container) {
   });
 }
 
+
 // ================= LOADER =================
 window.onload = function () {
   const loader = document.getElementById("loader");
@@ -40,35 +41,37 @@ function vote(player) {
 }
 
 // ================= COMMENTS =================
-function addComment() {
-  let comment = document.getElementById("comment").value;
-
-  if (comment === "") return;
-
-  let comments = JSON.parse(localStorage.getItem("comments")) || [];
-  comments.push(comment);
-
-  localStorage.setItem("comments", JSON.stringify(comments));
-  displayComments();
-
-  document.getElementById("comment").value = "";
-}
-
+// LOAD COMMENTS FROM STORAGE
 function displayComments() {
-  let comments = JSON.parse(localStorage.getItem("comments")) || [];
-  let list = document.getElementById("comments");
-
-  if (!list) return;
+  const list = document.getElementById("comment-list");
+  const comments = JSON.parse(localStorage.getItem("comments")) || [];
 
   list.innerHTML = "";
 
   comments.forEach(c => {
-    let li = document.createElement("li");
+    const li = document.createElement("li");
     li.innerText = c;
     list.appendChild(li);
   });
 }
 
+// ADD COMMENT
+function addComment() {
+  const input = document.getElementById("comment-input");
+  const text = input.value.trim();
+
+  if (text === "") return;
+
+  const comments = JSON.parse(localStorage.getItem("comments")) || [];
+  comments.push(text);
+
+  localStorage.setItem("comments", JSON.stringify(comments));
+
+  input.value = "";
+  displayComments();
+}
+
+// LOAD WHEN PAGE OPENS
 displayComments();
 
 // ================= LIKE BUTTON =================
@@ -95,14 +98,22 @@ function quiz(ans) {
 // ================= SOUND =================
 function playSound() {
   const audio = document.getElementById("sound");
-  if (audio) audio.play();
+  if (!audio) {
+    console.log("Audio not found ");
+    return;
+  }
+  audio.play()
+    .then(() => console.log("Playing 🔊"))
+    .catch(err => console.log("Error:", err));
 }
-
 function stopSound() {
   const audio = document.getElementById("sound");
-  if (audio) audio.pause();
-}
 
+  if (audio) {
+    audio.pause();
+    audio.currentTime = 0; // reset
+  }
+}
 // ================= COUNTDOWN =================
 const nextMatch = new Date("April 10, 2026 15:00:00").getTime();
 
@@ -134,15 +145,20 @@ if (!username) {
 }
 
 // ================= LOGOUT =================
-const logoutBtn = document.getElementById("logout-btn");
 
-if (logoutBtn) {
-  logoutBtn.addEventListener("click", function () {
-    localStorage.removeItem("loggedInUser");
-    alert("Logged out!");
-    window.location.href = "login.html";
-  });
-}
+document.addEventListener("DOMContentLoaded", function () {
+
+  const logoutBtn = document.getElementById("logout-btn");
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", function () {
+      localStorage.removeItem("loggedInUser");
+      alert("Logged out successfully!");
+      window.location.href = "login.html";
+    });
+  }
+
+});
 
 // ================= DARK MODE =================
 function toggleMode() {
@@ -230,5 +246,23 @@ if (ctx) {
         y: { beginAtZero: true }
       }
     }
+  });
+}
+// SHOW BUTTON WHEN SCROLLING
+window.onscroll = function() {
+  let btn = document.getElementById("topBtn");
+
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// SCROLL TO TOP
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
 }
