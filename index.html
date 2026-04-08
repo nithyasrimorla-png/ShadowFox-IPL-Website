@@ -9,78 +9,62 @@
 </head>
 
 <body>
+
 <header>
   <h1>RCB Fan Hub 🔥</h1>
   <nav>
-    <a href="#home">Home</a>
+    <a href="#">Home</a>
     <a href="#players">Players</a>
     <a href="#matches">Matches</a>
     <a href="#stats">Stats</a>
     <a href="#news">News</a>
-    <a href="#fan">Fan Zone</a>
+    <a href="#fan-zone">Fan Zone</a>
     <button onclick="toggleMode()">🌙 Mode</button>
     <button id="logout-btn">Logout</button>
   </nav>
 </header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Royal Challengers Bangalore</h1>
+  <p>Ee Sala Cup Namde ❤️</p>
+
+  <img src="kohli.jpg" class="hero-img">
+
+  <div class="champion-banner">
+    🏆 IPL 2025 Champions 🏆
+  </div>
+</section>
+
+<!-- STATS -->
 <section id="stats">
   <h2>Team Statistics</h2>
   <div class="card">Total Matches: 250+</div>
   <div class="card">Wins: 120+</div>
   <div class="card">Top Scorer: Virat Kohli</div>
-  <div class="champion-banner">
-  🏆 IPL 2025 Champions - RCB 🏆
-</div>
 </section>
 
-<section class="hero">
-  <h1>Royal Challengers Bangalore</h1>
-  <p>Ee Sala Cup Namde ❤️</p>
-
-  <div class="champion-banner">
-    🏆 IPL 2025 Champions 🏆
-  </div>
-  <section class="hero">
-  <img src="kohli.jpg" class="hero-img">
-  <h1>RCB Fan Hub</h1>
-</section>
-
-  <button onclick="scrollToSection()">Explore Team ↓</button>
-</section>
-<section id="news">
-
-
-  <h1>RCB Anthem</h1>
-  <button onclick="playSound()">Play Chant 🔊</button>
+<!-- ANTHEM -->
+<section id="anthem">
+  <h2>RCB Anthem</h2>
+  <button onclick="playSound()">Play 🔊</button>
   <button onclick="stopSound()">Stop 🔇</button>
   <audio id="sound" src="rcb.mp3"></audio>
-  <div id="loader">Loading...</div>
 </section>
 
+<!-- COUNTDOWN -->
 <section id="next-match">
   <h2>Next Match: RCB vs MI</h2>
   <p id="countdown"></p>
 </section>
 
-<section id="live-score">
-  <h2>Live Score</h2>
-  <div class="card">RCB: 120/3 (15 overs)</div>
-  <div class="card">MI: Yet to bat</div>
-</section>
-  <div id="popup" class="popup">
-  <div class="popup-content">
-    <span onclick="closePopup()" class="close">×</span>
-    <h2 id="p-name"></h2>
-    <p id="p-role"></p>
-    <p id="p-runs"></p>
-  </div>
-</div>
-  <div id="loader">Loading RCB 🔥...</div>
-
+<!-- PLAYERS -->
 <section id="players">
   <h2>Playing XI</h2>
   <div id="players-container"></div>
 </section>
 
+<!-- MATCHES -->
 <section id="matches">
   <h2>Match Schedule</h2>
   <ul>
@@ -90,9 +74,9 @@
   </ul>
 </section>
 
+<!-- POINTS -->
 <section id="points">
   <h2>IPL Points Table</h2>
-
   <div class="table-container">
     <table>
       <tr>
@@ -101,111 +85,93 @@
         <th>Wins</th>
         <th>Points</th>
       </tr>
-
       <tr><td>RCB</td><td>14</td><td>9</td><td>18</td></tr>
       <tr><td>CSK</td><td>14</td><td>8</td><td>16</td></tr>
       <tr><td>MI</td><td>14</td><td>7</td><td>14</td></tr>
-      <tr><td>KKR</td><td>14</td><td>7</td><td>14</td></tr>
-      <tr><td>SRH</td><td>14</td><td>6</td><td>12</td></tr>
-      <tr><td>RR</td><td>14</td><td>5</td><td>10</td></tr>
-      <tr><td>DC</td><td>14</td><td>4</td><td>8</td></tr>
-
     </table>
   </div>
 </section>
 
+<!-- NEWS -->
 <section id="news">
   <h2>Latest News</h2>
   <div class="card">🔥 RCB preparing for next big clash</div>
-  <div class="card">💪 Kohli in great form this season</div>
-  <div class="card">Fans Showing massive support on social media</div>
+  <div class="card">💪 Kohli in great form</div>
 </section>
 
+<!-- CHART -->
 <section id="player-stats">
   <h2>Player Statistics 📊</h2>
   <canvas id="myChart"></canvas>
 </section>
-  
 
+<!-- FAN ZONE -->
 <section id="fan-zone">
   <h2>🔥 Fan Zone</h2>
 
   <!-- POLL -->
   <div class="fan-box">
-    <h3>Who is your favorite player?</h3>
+    <h3>Favorite Player?</h3>
     <button onclick="vote('Kohli')">Kohli</button>
     <button onclick="vote('Maxwell')">Maxwell</button>
     <button onclick="vote('Phil Salt')">Phil Salt</button>
     <p id="vote-result"></p>
   </div>
-  <section id="chat">
-  <h2>💬 RCB Fans Chat</h2>
-  <input type="text" id="chat-name" placeholder="Your name">
-  <input type="text" id="chat-msg" placeholder="Type message">
-  <button onclick="sendMessage()">Send</button>
-  <div id="chat-box"></div>
-</section>
 
-  <!--Fan of the day -->
-  <section id="fan-day">
-  <h2>🌟 Fan of the Day</h2>
-  <p id="fan-name"></p>
-</section>
+  <!-- CHAT -->
+  <div class="fan-box">
+    <h3>💬 Chat</h3>
+    <input type="text" id="chat-name" placeholder="Name">
+    <input type="text" id="chat-msg" placeholder="Message">
+    <button onclick="sendMessage()">Send</button>
+    <div id="chat-box"></div>
+  </div>
+
+  <!-- FAN DAY -->
+  <div class="fan-box">
+    <h3>🌟 Fan of the Day</h3>
+    <p id="fan-name"></p>
+  </div>
 
   <!-- COMMENTS -->
   <div class="fan-box">
-    <h3>Fan Comments 💬</h3>
-    <input type="text" id="name" placeholder="Your name">
+    <h3>Comments</h3>
     <input type="text" id="comment" placeholder="Your comment">
     <button onclick="addComment()">Post</button>
-
-    <ul id="comment-list"></ul>
+    <ul id="comments"></ul>
   </div>
 
-  <!-- LIKE BUTTON -->
+  <!-- LIKE -->
   <div class="fan-box">
-    <h3>Support RCB ❤️</h3>
-    <button onclick="likeTeam()">❤️ Like</button>
+    <h3>Support ❤️</h3>
+    <button onclick="likeTeam()">Like</button>
     <p id="like-count">0 Likes</p>
   </div>
 
 </section>
-  
-<section>
-<h2>RCB Quiz</h2>
-<div class="card">
-<p>Who is RCB's highest run scorer?</p>
-<button onclick="quiz('Kohli')">Kohli</button>
-<button onclick="quiz('Patidar')">Patidar</button>
-<button onclick="checkAnswer('Padikkal')">Padikkal</button>
-<p id="quiz-result"></p>
-</div>
-</section>
-  
-<section>
-  <h3>Comments</h3>
-  <div class=""card>
-  <input type="text" id="comment" placeholder="Your message">
-  <button onclick="addComment()">Post</button>
-  <ul id="comments"></ul>
-  </div>
-</section>
-  <div id="modal" class="modal">
-  <div class="modal-content">
-    <span onclick="closeModal()" class="close">&times;</span>
-    <h2 id="modal-name"></h2>
-    <p id="modal-role"></p>
-    <p id="modal-runs"></p>
-  </div>
-</div>
 
-<footer>
-  <footer>
-  <p>© 2026 RCB Fan Hub</p>
-  <p>Made by [Nithya sri]</p>
-</footer>
-</footer>
+<!-- QUIZ -->
+<section id="quiz">
+  <h2>RCB Quiz</h2>
+  <div class="card">
+    <p>Who is RCB's highest run scorer?</p>
+    <button onclick="quiz('Kohli')">Kohli</button>
+    <button onclick="quiz('Patidar')">Patidar</button>
+    <button onclick="quiz('Padikkal')">Padikkal</button>
+    <p id="quiz-result"></p>
+  </div>
+</section>
+
+<!-- BACK TO TOP -->
 <button onclick="topFunction()" id="topBtn">⬆</button>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 RCB Fan Hub</p>
+  <p>Made by Nithya sri</p>
+</footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
