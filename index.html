@@ -47,7 +47,7 @@
 <!-- ANTHEM -->
 <section id="anthem">
   <h2>RCB Anthem</h2>
-  <button onclick="playSound()">Play 🔊</button>
+  <button onclick="playSound()">Play Chant 🔊</button>
   <button onclick="stopSound()">Stop 🔇</button>
   <audio id="sound" src="rcb.mp3"></audio>
 </section>
@@ -134,12 +134,15 @@
   </div>
 
   <!-- COMMENTS -->
-  <div class="fan-box">
-    <h3>Comments</h3>
-    <input type="text" id="comment" placeholder="Your comment">
-    <button onclick="addComment()">Post</button>
-    <ul id="comments"></ul>
-  </div>
+<div class="fan-box">
+  <h3>💬 Fan Comments</h3>
+
+  <input type="text" id="comment-input" placeholder="Your message">
+  <button onclick="addComment()">Post</button>
+
+  <ul id="comment-list"></ul>
+</div>
+
 
   <!-- LIKE -->
   <div class="fan-box">
