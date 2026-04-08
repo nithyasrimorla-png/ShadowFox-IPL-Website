@@ -216,34 +216,6 @@ setTimeout(()=>{
 function topFunction(){
   window.scrollTo({top: 0, behavior: "smooth"});
 }
-//Player Charts
-const ctx = document.getElementById('myChart');
-
-new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: [
-      "Kohli",
-      "Padikkal",
-      "Patidar",
-      "Phil Salt",
-      "Tim David"
-    ],
-    datasets: [{
-      label: 'Runs',
-      data: [7500, 4000, 2700, 900, 4500],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      y: { 
-        beginAtZero: true
-      }
-    }
-  }
-});
-
 // Fan-Day
 const fans = [
   "Nithya ❤️",
@@ -330,3 +302,32 @@ function displayMessages(){
 
 // LOAD ON START
 displayMessages();
+//plyaer stats chart
+const ctx = document.getElementById('myChart');
+
+if (ctx) {
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [
+        "Kohli",
+        "Padikkal",
+        "Phil Salt",
+        "Patidar",
+        "Jitesh sharma"
+      ],
+      datasets: [{
+        label: 'Runs',
+        data: [750, 500, 420, 350, 300],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+}
