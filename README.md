@@ -7,7 +7,7 @@ RCB Fan Hub is a dynamic and interactive web application dedicated to Royal Chal
 
 ##  Features
 
--  Login & Signup System using Local Storage
+-  Login & Signup System using Local Storage 
 -  Player Profiles with roles and performance stats
 -  Match Schedule section
 -  Team Statistics dashboard
@@ -50,7 +50,6 @@ rcb-fan-hub/
 ![RCB Fan Hub](website.jpeg)
 
 ##  Future Improvements
-- ## 💡 Future Improvements
 - Live IPL score integration
 - Player statistics API
 - Adding player images
@@ -58,7 +57,9 @@ rcb-fan-hub/
 - Real-time chat system for fans
 - Fully responsive mobile-first design
 -  Mobile optimization
--  Better UI & responsiveness  
+-  Better UI & responsiveness
+-  Add real authentication system (Firebase / backend instead of localStorage)
+- ntegrate live IPL API for real-time scores and match updates  
 
 # Devoloped By
 M.Nithya Sri
