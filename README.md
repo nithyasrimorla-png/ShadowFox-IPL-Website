@@ -25,7 +25,6 @@ RCB Fan Hub is a dynamic and interactive web application dedicated to Royal Chal
 - JavaScript
 
 ##  Live Demo
-(After deployment ,add your link here)
 https://nithyasrimorla-png.github.io/ShadowFox-IPL-Website/login.html
 
 
