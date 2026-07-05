@@ -24,16 +24,16 @@ A frontend fan universe for **Royal Challengers Bengaluru** — built to give ev
 
 ---
 
-## ✨ Why This Project?
+##  Why This Project?
 
 Most IPL fan pages are static — a logo, a schedule, maybe a news feed. **RCB Fan Hub flips that.**
 
 It's built around one idea: *a fan site should feel alive.* That means:
 
-- 🔐 Fans get their own **login**, not just a landing page
-- 📊 Stats aren't just displayed — they're **charted**
-- 🗳️ Opinions aren't just invited — they're **counted and shown live**
-- 💬 The community isn't an afterthought — it's a **built-in chat and comment layer**
+-  Fans get their own **login**, not just a landing page
+-  Stats aren't just displayed — they're **charted**
+-  Opinions aren't just invited — they're **counted and shown live**
+-  The community isn't an afterthought — it's a **built-in chat and comment layer**
 
 Everything runs client-side, powered entirely by **Local Storage** — a deliberate constraint that pushed the architecture toward smart, reusable JavaScript instead of relying on a server.
 
@@ -41,21 +41,21 @@ Everything runs client-side, powered entirely by **Local Storage** — a deliber
 
 ---
 
-## 🚀 Features
+##  Features
 
-**🔐 Access & Identity**
+** Access & Identity**
 - Local Storage-based Login & Signup
 - Persistent sessions across reloads
 - Client-side form validation
 
-**🎨 Experience Layer**
+** Experience Layer**
 - 🌗 Dark / Light Mode toggle
 - 🖼️ Animated Hero Banner
 - 📌 Sticky Navigation
 - ⬆️ Back-to-Top floating button
 - 📱 Fully Responsive across devices
 
-**🏏 Cricket Core**
+** Cricket Core**
 - 🧢 Playing XI section
 - 📅 Match Schedule
 - ⏱️ Next Match Countdown (live ticking)
@@ -64,7 +64,7 @@ Everything runs client-side, powered entirely by **Local Storage** — a deliber
 - 📈 Player Statistics Chart, powered by **Chart.js**
 - 📊 Team Statistics overview
 
-**🎉 Fan Engagement**
+** Fan Engagement**
 - 🎵 RCB Anthem Audio Player
 - 🧠 Interactive Quiz with scoring
 - 🗳️ Fan Poll with live results
@@ -77,7 +77,7 @@ Everything runs client-side, powered entirely by **Local Storage** — a deliber
 
 ---
 
-## 🎮 Interactive Highlights
+##  Interactive Highlights
 
 <details>
 <summary><strong>⏱️ Live Countdown Timer</strong></summary>
@@ -134,7 +134,7 @@ A CSS-variable-driven Dark/Light toggle that repaints the entire UI instantly, w
 
 <br><br>
 
-<img src="./screenshots/login.png" alt="Login Page" width="45%"> <img src="./screenshots/dashboard.png" alt="Dashboard" width="45%">
+<img src="./screenshots/login.jpeg" alt="Login Page" width="45%"> <img src="./screenshots/dashboard.png" alt="Dashboard" width="45%">
 
 </div>
 
@@ -142,9 +142,9 @@ A CSS-variable-driven Dark/Light toggle that repaints the entire UI instantly, w
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
-```text
+
 rcb-fan-hub/
 ├── index.html
 ├── login.html
@@ -270,8 +270,6 @@ If this project impressed you, inspired you, or helped you learn something —
 ---
 
 <div align="center">
-
-### 🔴🖤 *Play Bold.*
 
 Made with ❤️ by **M. Nithya Sri**
 
