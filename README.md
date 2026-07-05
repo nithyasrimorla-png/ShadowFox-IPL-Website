@@ -11,15 +11,14 @@ A frontend fan universe for **Royal Challengers Bengaluru** — built to give ev
 ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chart.js&logoColor=white)
 ![LocalStorage](https://img.shields.io/badge/Storage-LocalStorage-orange?style=flat-square)
 ![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-222222?style=flat-square&logo=github)
-![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)
 
-**[🔴 Live Demo](https://nithyasrimorla-png.github.io/ShadowFox-IPL-Website/login.html)**
+**[Live Demo] :(https://nithyasrimorla-png.github.io/ShadowFox-IPL-Website/login.html)**
 
 </div>
 
 <br>
 
-> 🔥 *No backend. No frameworks. Just clean HTML, CSS, and JavaScript turned into a fully interactive fan experience — proof that fundamentals, done well, are enough to build something people actually want to use.*
+> *No backend. No frameworks. Just clean HTML, CSS, and JavaScript turned into a fully interactive fan experience — proof that fundamentals, done well, are enough to build something people actually want to use.*
 
 <br>
 
