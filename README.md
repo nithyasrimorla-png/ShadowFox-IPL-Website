@@ -5,6 +5,7 @@
 
 A frontend fan universe for **Royal Challengers Bengaluru** — built to give every RCB fan a home for match-day energy, player pride, and community banter.
 
+RCB Fan Hub – A dynamic IPL team website with login/signup system, player names, Team Anthem , match schedules, Live scoring, next match countdown ,stats, quiz ,points table ,engagement features and commenting feature built using HTML, CSS, and JavaScript.
 
 **[Live Demo] :(https://nithyasrimorla-png.github.io/ShadowFox-IPL-Website/login.html)**
 
@@ -37,19 +38,19 @@ Everything runs client-side, powered entirely by **Local Storage** — a deliber
 
 ##  Features
 
-** Access & Identity**
+# Access & Identity
 - Local Storage-based Login & Signup
 - Persistent sessions across reloads
 - Client-side form validation
 
-** Experience Layer**
+# Experience Layer
 -  Dark / Light Mode toggle
 -  Animated Hero Banner
 -  Sticky Navigation
 -  Back-to-Top floating button
 -  Fully Responsive across devices
 
-** Cricket Core**
+# Cricket Core
 -  Playing XI section
 -  Match Schedule
 -  Next Match Countdown (live ticking)
@@ -58,7 +59,7 @@ Everything runs client-side, powered entirely by **Local Storage** — a deliber
 -  Player Statistics Chart, powered by **Chart.js**
 -  Team Statistics overview
 
-** Fan Engagement**
+# Fan Engagement
 -  RCB Anthem Audio Player
 -  Interactive Quiz with scoring
 -  Fan Poll with live results
@@ -105,7 +106,7 @@ A CSS-variable-driven Dark/Light toggle that repaints the entire UI instantly, w
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 -  **HTML5** — semantic structure and accessibility-first markup
 -  **CSS3** — Flexbox, Grid, custom properties, transitions
